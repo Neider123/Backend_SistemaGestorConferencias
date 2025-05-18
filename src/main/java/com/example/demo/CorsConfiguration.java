@@ -14,7 +14,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 	                .allowedOrigins("https://sistema-gestor-conferencias.vercel.app")
 	                .allowedMethods("GET","POST", "PUT", "DELETE", "HEAD", "OPTIONS")
 			.allowedHeaders("*")
-	                .allowCredentials(false);
+	                .allowCredentials(true);
 	    }
 
 }
