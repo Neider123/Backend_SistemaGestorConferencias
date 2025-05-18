@@ -11,7 +11,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 	    public void addCorsMappings(CorsRegistry registry) {
 
 	        registry.addMapping("/**")
-	                .allowedOrigins("*")
+	                .allowedOrigins("https://sistema-gestor-conferencias.vercel.app")
 	                .allowedMethods("GET","POST", "PUT", "DELETE", "HEAD", "OPTIONS")
 	                .allowCredentials(false);
 	    }
