@@ -13,7 +13,6 @@ public class CorsConfiguration implements WebMvcConfigurer {
 	        registry.addMapping("/**")
 	                .allowedOrigins("*")
 	                .allowedMethods("GET","POST", "PUT", "DELETE", "HEAD", "OPTIONS")
-			.allowedHeaders("*")
 	                .allowCredentials(false);
 	    }
 
