@@ -141,10 +141,10 @@ public class ConferenciaService {
 		    conferenciaRepository.save(conferenciaAct);
 		} */
 		
-		public List<Conferencia> obtenerConferencisTerminadas(LocalDate fecha){
+		/* public List<Conferencia> obtenerConferencisTerminadas(LocalDate fecha){
 			return conferenciaRepository.findByFechaFinAfterAndActivoTrue(fecha);
 		}
-		
+		 */
 		
 	/* 	@Transactional
 	    public void desactivarConferenciasConFechaFinAntesDe(LocalDate fecha) {
