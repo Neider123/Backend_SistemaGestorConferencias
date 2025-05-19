@@ -12,7 +12,7 @@ import com.example.demo.service.ConferenciaService;
 public class ConferenciaScheduler {
 	
 	
-	   @Autowired
+	 /*   @Autowired
 	    private ConferenciaService conferenciaService;
 
 	    @Scheduled(cron = "0 0 0 * * *") // Se ejecuta todos los días a medianoche
@@ -21,6 +21,6 @@ public class ConferenciaScheduler {
 	        
 	        // Llama al servicio para desactivar conferencias cuya fecha de fin ha pasado
 	        conferenciaService.desactivarConferenciasConFechaFinAntesDe(today);
-	    }
+	    } */
 
 }
