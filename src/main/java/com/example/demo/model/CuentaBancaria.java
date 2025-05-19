@@ -19,7 +19,7 @@ public class CuentaBancaria {
     private String banco; // Nombre del banco
     private String titular; // Nombre del titular de la cuenta
 
-    @OneToOne(mappedBy = "cuentaBancaria")
-    private Conferencia conferencia; // Relación con la conferencia
+    /* @OneToOne(mappedBy = "cuentaBancaria")
+    private Conferencia conferencia; // Relación con la conferencia */
 
 }

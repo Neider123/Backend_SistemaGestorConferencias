@@ -20,7 +20,6 @@ import com.example.demo.model.Usuario;
 import com.example.demo.service.AWSS3ServiceImpl;
 import com.example.demo.service.ArticuloService;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
 @RequestMapping("/articulos")

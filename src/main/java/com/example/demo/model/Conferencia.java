@@ -78,8 +78,8 @@ public class Conferencia implements Serializable {
 
 	private String imagenUrl;
 
-	@OneToOne
+	/* @OneToOne
 	@JoinColumn(name = "id_cuenta_bancaria")
-	private CuentaBancaria cuentaBancaria;
+	private CuentaBancaria cuentaBancaria; */
 
 }
