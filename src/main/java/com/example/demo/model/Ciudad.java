@@ -30,8 +30,8 @@ public class Ciudad {
 	@JoinColumn(name = "id_pais")
 	private Pais pais;
 	
-	/* @OneToMany(mappedBy ="ciudad")
+	@OneToMany(mappedBy ="ciudad")
 	@JsonIgnore
-	private List<Institucion> instituciones; */
+	private List<Institucion> instituciones;
 
 }
