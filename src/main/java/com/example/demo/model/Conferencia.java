@@ -32,7 +32,7 @@ import lombok.ToString;
 // property = "id_conferencia")
 public class Conferencia implements Serializable {
 
-	@Id
+@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id_conferencia;
 	private String nombre;
@@ -41,50 +41,45 @@ public class Conferencia implements Serializable {
 	private String descripcion;
 	private String lugar;
 	private String estado;
-	
-	@OneToMany(mappedBy = "conferencia")
-	// Establecer referencia manejada
+
+	@OneToMany(mappedBy = "conferencia", fetch = FetchType.LAZY)
 	@JsonIgnore
 	@ToString.Exclude
 	private List<Topico> topicos;
-	
-	@ManyToOne
-	@JoinColumn(name = "id_chair")
-	private Usuario chair;
-	
-	
-	private String imagenUrl;
-	
-	@OneToMany(mappedBy = "conferencia")
+
+	@OneToMany(mappedBy = "conferencia", fetch = FetchType.LAZY)
 	@JsonIgnore
 	@ToString.Exclude
-    private List<Comite> comites;
-	
-	@OneToMany(mappedBy = "conferencia")
+	private List<Comite> comites;
+
+	@OneToMany(mappedBy = "conferencia", fetch = FetchType.LAZY)
 	@JsonIgnore
 	@ToString.Exclude
 	private List<Inscripcion> inscripciones;
-	
-	
-	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL)
-	@ToString.Exclude
+
+	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JsonIgnore
+	@ToString.Exclude
 	private List<Convocatoria> convocatorias;
-	  
-	  
-	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL)
+
+	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JsonIgnore
 	@ToString.Exclude
-	 private List<Precio> precios;
-	
-	@OneToMany(mappedBy = "conferencia")
+	private List<Precio> precios;
+
+	@OneToMany(mappedBy = "conferencia", fetch = FetchType.LAZY)
 	@JsonIgnore
 	@ToString.Exclude
 	private List<Sesion> sesiones;
-	
-	
-	@OneToOne
-    @JoinColumn(name = "id_cuenta_bancaria")
-    private CuentaBancaria cuentaBancaria;
-	
+
+	@ManyToOne
+	@JoinColumn(name = "id_chair")
+	private Usuario chair;
+
+	private String imagenUrl;
+
+	/* @OneToOne
+	@JoinColumn(name = "id_cuenta_bancaria")
+	private CuentaBancaria cuentaBancaria; */
+
 }
