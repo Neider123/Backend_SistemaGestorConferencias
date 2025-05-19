@@ -13,17 +13,17 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 @Configuration
 public class AwsConfig {
 
-	@Value("${aws.accessKeyId}")
+	@Value("${aws.access_key_id}")
 	private String accessKeyId;
 
-	@Value("${aws.secretAccessKey}")
+	@Value("${aws.secret_access_key}")
 	private String accessSecretKey;
 
 	@Value("${aws.s3.region}")
 	private String region;
-	
+
 	@Bean
-	//acceso a AWS
+	// acceso a AWS
 	public AmazonS3 getS3Client() {
 		BasicAWSCredentials credentials = new BasicAWSCredentials(accessKeyId, accessSecretKey);
 		return AmazonS3ClientBuilder.standard().withRegion(Regions.fromName(region))
