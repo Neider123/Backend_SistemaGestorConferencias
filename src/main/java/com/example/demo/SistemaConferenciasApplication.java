@@ -10,11 +10,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class SistemaConferenciasApplication {
 
 	public static void main(String[] args) {
-		/* try {
+		try {
 			CustomTrustManager.configureTrustManager();
 		} catch (Exception e) {
 			e.printStackTrace();
-		} */
+		}
 		SpringApplication.run(SistemaConferenciasApplication.class, args);
 	}
 
