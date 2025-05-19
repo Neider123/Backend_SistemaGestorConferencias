@@ -17,7 +17,7 @@ import lombok.Data;
 @Table(name = "pago")
 public class Pago implements Serializable {
 	
-	@Id
+	/* @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
@@ -30,7 +30,7 @@ public class Pago implements Serializable {
 	@JoinColumn(name = "inscripcion_id", referencedColumnName = "id")
 	private Inscripcion inscripcion;
 	
-	private String urlSoporte;
+	private String urlSoporte; */
 	
 
 }

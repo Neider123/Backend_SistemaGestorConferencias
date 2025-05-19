@@ -40,19 +40,19 @@ public class Conferencia implements Serializable {
 	private String lugar;
 	private String estado;
 	
-	@OneToMany(mappedBy = "conferencia")
+	/* @OneToMany(mappedBy = "conferencia")
 	// Establecer referencia manejada
 	@JsonIgnore
 	@ToString.Exclude
 	private List<Topico> topicos;
-	
+	 */
 	@ManyToOne
 	@JoinColumn(name = "id_chair")
 	private Usuario chair;
 	
 	
 	private String imagenUrl;
-	
+	/* 
 	@OneToMany(mappedBy = "conferencia")
 	@JsonIgnore
 	@ToString.Exclude
@@ -67,24 +67,24 @@ public class Conferencia implements Serializable {
 	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL)
 	@ToString.Exclude
 	@JsonIgnore
-	private List<Convocatoria> convocatorias;
+	private List<Convocatoria> convocatorias; */
 	  
 	  
-	@OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL)
+	/* @OneToMany(mappedBy = "conferencia", cascade = CascadeType.ALL)
 	@JsonIgnore
 	@ToString.Exclude
 	 private List<Precio> precios;
-	
-	@OneToMany(mappedBy = "conferencia")
+	 */
+/* 	@OneToMany(mappedBy = "conferencia")
 	@JsonIgnore
 	@ToString.Exclude
 	private List<Sesion> sesiones;
+	 */
 	
-	
-	@OneToOne
+	/* @OneToOne
     @JoinColumn(name = "id_cuenta_bancaria")
     private CuentaBancaria cuentaBancaria;
-	
+	 */
 	
 
 }

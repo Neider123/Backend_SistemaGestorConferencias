@@ -16,7 +16,7 @@ import com.example.demo.repository.PrecioRepository;
 @Service
 public class PrecioService {
 	
-	@Autowired
+	/* @Autowired
 	PrecioRepository precioRepository;
 	
 	@Autowired
@@ -44,5 +44,5 @@ public class PrecioService {
 		//precio.setEtapa(nuevoPrecio.getEtapa());
 		precio.setTipoUsuario(nuevoPrecio.getTipoUsuario());
 		return precioRepository.save(precio);
-	}
+	} */
 }

@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class InscripcionDTO {
 	
-	public InscripcionDTO(Inscripcion inscripcion) {
+	/* public InscripcionDTO(Inscripcion inscripcion) {
         this.id = inscripcion.getId();
         this.estado = inscripcion.getEstado();
         this.fechaInscripcion = inscripcion.getFechaInscripcion();
@@ -21,7 +21,7 @@ public class InscripcionDTO {
         this.asistente = inscripcion.getAsistente();
         this.conferencia = inscripcion.getConferencia();
     }
-	
+	 */
 	private int id;
 	 private String estado;
 	 private Usuario asistente;

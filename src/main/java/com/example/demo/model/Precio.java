@@ -17,7 +17,7 @@ import lombok.Data;
 @Table(name = "precio")
 public class Precio implements Serializable {
 	
-	@Id
+	/* @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
@@ -32,6 +32,6 @@ public class Precio implements Serializable {
 
 	 @ManyToOne
 	 @JoinColumn(name = "id_conferencia")
-	 private Conferencia conferencia;
+	 private Conferencia conferencia; */
 
 }

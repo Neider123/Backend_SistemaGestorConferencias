@@ -28,11 +28,11 @@ import lombok.Data;
 @Table(name = "inscripcion")
 
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-@JsonIgnoreProperties({"pago"})
+/* @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIgnoreProperties({"pago"}) */
 public class Inscripcion implements Serializable {
 	
-	@Id
+	/* @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
@@ -53,7 +53,7 @@ public class Inscripcion implements Serializable {
     
     @OneToOne(mappedBy = "inscripcion", cascade = CascadeType.ALL)
     private Pago pago;
-	
+	 */
 	
 
 }
