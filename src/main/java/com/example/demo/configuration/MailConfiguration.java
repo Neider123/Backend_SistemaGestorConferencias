@@ -12,7 +12,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 @Configuration
 public class MailConfiguration {
 	
-	@Autowired
+	/* @Autowired
 	private Environment env;
 
 	@Bean
@@ -37,6 +37,6 @@ public class MailConfiguration {
 	   
 	    
 	    return mailSender;
-	}
+	} */
 
 }
