@@ -146,7 +146,7 @@ public class ConferenciaService {
 		}
 		
 		
-		@Transactional
+	/* 	@Transactional
 	    public void desactivarConferenciasConFechaFinAntesDe(LocalDate fecha) {
 	        List<Conferencia> conferencias = conferenciaRepository.findByFechaFinAfterAndActivoTrue(fecha);
 	        System.out.println(conferencias);
@@ -154,7 +154,7 @@ public class ConferenciaService {
 	            conferencia.setEstado("Finalizada"); // O el campo que uses para el estado
 	            conferenciaRepository.save(conferencia);
 	        }
-		}
+		} */
 		
 		
 

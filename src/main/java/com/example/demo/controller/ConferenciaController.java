@@ -194,10 +194,10 @@ public class ConferenciaController {
 	}
 	
 	
-	 @PostMapping("/desactivarConferenciasPasadas")
+	/*  @PostMapping("/desactivarConferenciasPasadas")
 	    public ResponseEntity<String> desactivarConferenciasPasadas() {
 	        conferenciaService.desactivarConferenciasConFechaFinAntesDe(LocalDate.now());
 	        return ResponseEntity.ok("Conferencias pasadas desactivadas exitosamente.");
-	  }
+	  } */
 	
 }
