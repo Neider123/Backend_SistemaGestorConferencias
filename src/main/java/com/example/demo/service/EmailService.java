@@ -12,7 +12,7 @@ import jakarta.mail.internet.MimeMessage;
 @Service
 public class EmailService {
 	
-	private JavaMailSender mailSender;
+	/* private JavaMailSender mailSender;
 	
 	public EmailService(JavaMailSender mailSender) {
         this.mailSender = mailSender;
@@ -56,5 +56,5 @@ public class EmailService {
         helper.addAttachment(attachName, inputStream);
         mailSender.send(message);
     }
-
+ */
 }

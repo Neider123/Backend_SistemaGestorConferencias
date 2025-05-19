@@ -17,7 +17,7 @@ import com.example.demo.service.PresentacionService;
 @RequestMapping("/presentaciones")
 public class PresentacionController {
 	
-	@Autowired
+/* 	@Autowired
 	PresentacionService presentacionService;
 	
 	@GetMapping
@@ -46,5 +46,5 @@ public class PresentacionController {
 	public void guardarPresentacion(@RequestBody Presentacion presentacion,@PathVariable int id,@PathVariable int idSesion) {
 		presentacionService.Guardar(presentacion, id,idSesion);
 	}
-
+ */
 }

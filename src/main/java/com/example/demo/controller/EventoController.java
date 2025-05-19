@@ -19,7 +19,7 @@ import com.example.demo.service.EventoService;
 @RequestMapping("/eventos")
 public class EventoController {
 	
-	@Autowired
+	/* @Autowired
 	EventoService eventoService;
 	
 	@GetMapping
@@ -39,5 +39,5 @@ public class EventoController {
 	}
 	
 	
-
+ */
 }

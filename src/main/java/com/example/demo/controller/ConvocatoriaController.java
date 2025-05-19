@@ -21,7 +21,7 @@ import com.example.demo.service.ConvocatoriaService;
 @RequestMapping("convocatorias")
 public class ConvocatoriaController {
 	
-	@Autowired
+/* 	@Autowired
 	ConvocatoriaService convocatoriaService;
 	
 	@GetMapping
@@ -50,6 +50,6 @@ public class ConvocatoriaController {
 	public ResponseEntity<String> editarConvocatoria(@PathVariable int idConvocatoria,@RequestBody Convocatoria convocatoriaActualizada){
 		convocatoriaService.editarConvocatoria(idConvocatoria, convocatoriaActualizada);
 		return new ResponseEntity<>("convocatoria editada exitosamente", HttpStatus.OK);
-	}
+	} */
 
 }

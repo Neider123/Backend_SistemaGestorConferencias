@@ -18,7 +18,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Comite implements Serializable {
+public class Comite /* implements Serializable */ {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

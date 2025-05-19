@@ -15,7 +15,7 @@ import com.example.demo.repository.PaisRepository;
 @Service
 public class UbicacionService {
 	
-	@Autowired
+	/* @Autowired
 	PaisRepository paisRepository;
 	
 	@Autowired
@@ -44,6 +44,6 @@ public class UbicacionService {
     	return ciudadRepository.findByPaisId(idPais);
     }
 	
-	
+	 */
 
 }

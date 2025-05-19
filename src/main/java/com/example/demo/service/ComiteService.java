@@ -22,7 +22,7 @@ public class ComiteService {
 	
 	
 	
-	@Autowired
+	/* @Autowired
 	UsuarioRepository usuarioRepository;
 	
 	
@@ -108,6 +108,6 @@ public class ComiteService {
 	}
 	
 	
-	
+	 */
 
 }

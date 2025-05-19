@@ -16,7 +16,7 @@ import com.example.demo.repository.SesionRepository;
 @Service
 public class EventoService {
 	
-	
+	/* 
 	@Autowired
 	EventoRepository eventoRepository;
 	
@@ -86,6 +86,6 @@ public class EventoService {
 	// Método genérico para verificar si dos intervalos de tiempo se solapan
 	private boolean doTimesOverlap(LocalTime start1, LocalTime end1, LocalTime start2, LocalTime end2) {
 	    return (start1.isBefore(end2) && end1.isAfter(start2));
-	}
+	} */
 
 }

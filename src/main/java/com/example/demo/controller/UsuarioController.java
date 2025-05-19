@@ -30,7 +30,7 @@ import jakarta.mail.internet.MimeMessage;
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
-	@Autowired
+	/* @Autowired
 	UsuarioService usuarioService;
 
 	@Autowired
@@ -127,7 +127,7 @@ public class UsuarioController {
 			emailSender.send(message);
 		}
 	}
-
+ */
 	/**
 	 * @PostMapping("/register/{idRol}") public void register(@RequestBody Usuario
 	 * usuario,@PathVariable int idRol) { usuarioService.RegistrarUsuario(usuario,
@@ -154,7 +154,7 @@ public class UsuarioController {
 	 * } }
 	 */
 
-	@GetMapping("/findUsuarios/{rol}")
+	/* @GetMapping("/findUsuarios/{rol}")
 	public List<Usuario> getUsuariosPorRol(@PathVariable("rol") String nombre) {
 		return usuarioService.getEvaluadores(nombre);
 	}
@@ -170,5 +170,5 @@ public class UsuarioController {
 		return new ResponseEntity<>(usuarioService.iniciarSesion(login), HttpStatus.OK);
 
 	}
-
+ */
 }

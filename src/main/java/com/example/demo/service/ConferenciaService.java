@@ -23,7 +23,7 @@ public class ConferenciaService {
 /* 	@Autowired
 	AWSS3ServiceImpl awss3ServiceImpl; */
 	
-	@Autowired
+	/* @Autowired
 	UsuarioRepository usuarioRepository;
 	
 	public List<Conferencia> getAllConferencias(){
@@ -112,7 +112,7 @@ public class ConferenciaService {
 		public void delete(Integer id) {
 			conferenciaRepository.deleteById(id);
 		}
-		
+		 */
 		/* //editar Conferencias
 		public void editarConferencia(Conferencia conferencia,Integer idConferencia,MultipartFile archivoImagen,int idChair) {
 			Conferencia conferenciaAct = conferenciaRepository.findById(idConferencia)

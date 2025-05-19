@@ -21,7 +21,7 @@ import com.example.demo.service.SesionService;
 @RequestMapping("/sesiones")
 public class SesionController {
 	
-	@Autowired
+/* 	@Autowired
 	SesionService sesionService;
 	
 	@GetMapping
@@ -53,5 +53,5 @@ public class SesionController {
 		return sesionService.editarSesion(idSesion, sesion);
 	}
 	
-
+ */
 }

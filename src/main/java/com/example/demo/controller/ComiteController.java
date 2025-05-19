@@ -27,7 +27,7 @@ import jakarta.persistence.EntityNotFoundException;
 public class ComiteController {
 	
 	
-	@Autowired
+/* 	@Autowired
 	ComiteService comiteService;
 	
 	 private final ObjectMapper objectMapper; // Declarar ObjectMapper
@@ -97,5 +97,5 @@ public class ComiteController {
 	    }
 	}
 
-
+ */
 }

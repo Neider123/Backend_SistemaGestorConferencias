@@ -14,7 +14,7 @@ import com.example.demo.repository.PagoRepository;
 
 @Service
 public class PagoService {
-	
+	/* 
 	@Autowired
 	PagoRepository pagoRepository;
 	
@@ -40,7 +40,7 @@ public class PagoService {
 		pagoRepository.save(pago);
 		return new ResponseEntity<>("pago realizado exitosamente",HttpStatus.OK);
 		
-	}
+	} */
 	
 	
 

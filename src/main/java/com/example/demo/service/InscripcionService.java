@@ -14,7 +14,7 @@ import com.example.demo.repository.UsuarioRepository;
 
 @Service
 public class InscripcionService {
-	
+/* 	
 	@Autowired
 	InscripcionRepository inscripcionRepository;
 	
@@ -53,6 +53,6 @@ public class InscripcionService {
 		Inscripcion inscripcion = inscripcionRepository.findById(idInscripcion).orElseThrow(() -> new RuntimeException("Inscripcion no encontrada"));
 		inscripcion.setEstado(estado);
 		return inscripcionRepository.save(inscripcion);
-	}
+	} */
 
 }

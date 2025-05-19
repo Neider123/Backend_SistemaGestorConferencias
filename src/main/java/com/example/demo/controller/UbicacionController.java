@@ -17,7 +17,7 @@ import com.example.demo.service.UbicacionService;
 @RequestMapping("/ubicacion")
 public class UbicacionController {
 	
-	@Autowired
+	/* @Autowired
 	UbicacionService ubicacionService;
 	
 	
@@ -45,7 +45,7 @@ public class UbicacionController {
 	 public List<Institucion> getInstitucionesByCiudad(@PathVariable int idCiudad) {
 	 return ubicacionService.getInstitucionesByCiudad(idCiudad);
 	 }
-	
+	 */
 	
 	
 

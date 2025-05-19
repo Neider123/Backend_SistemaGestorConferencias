@@ -17,7 +17,7 @@ import com.example.demo.repository.SesionRepository;
 @Service
 public class SesionService {
 	
-	@Autowired
+	/* @Autowired
 	SesionRepository sesionRepository;
 	
 	@Autowired
@@ -93,6 +93,6 @@ public class SesionService {
 	}
 
 	
-	
+	 */
 
 }

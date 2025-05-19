@@ -19,7 +19,7 @@ import com.example.demo.service.PrecioService;
 @RestController
 @RequestMapping("/precios")
 public class PrecioController {
-	
+/* 	
 	@Autowired
 	PrecioService precioService;
 	
@@ -42,7 +42,7 @@ public class PrecioController {
 	@PutMapping("/editarPrecio/{idPrecio}")
 	public Precio editarPrecio(@PathVariable int idPrecio,@RequestBody Precio precio) {
 		return precioService.editarPrecio(idPrecio, precio);
-	}
+	} */
 	
 	
 

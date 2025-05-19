@@ -20,7 +20,7 @@ import com.example.demo.service.SalaService;
 @RequestMapping("/salas")
 public class SalaController {
 	
-	@Autowired
+	/* @Autowired
 	SalaService salaService;
 	
 	@GetMapping
@@ -41,5 +41,5 @@ public class SalaController {
 		return new ResponseEntity<>("sala editada exitosamente", HttpStatus.OK);
     }
 
-
+ */
 }

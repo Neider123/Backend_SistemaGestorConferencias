@@ -25,7 +25,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 @Service
 public class ArticuloService {
 	
-	@Autowired
+	/* @Autowired
 	ArticuloRepository articuloRepository;
 	
 	@Autowired
@@ -118,6 +118,6 @@ public class ArticuloService {
 		}
 		
 	}
-	
+	 */
 
 }

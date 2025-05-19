@@ -32,7 +32,7 @@ import jakarta.mail.internet.MimeMessage;
 @RequestMapping("/evaluacion")
 public class EvaluacionController {
 	
-	@Autowired
+/* 	@Autowired
 	EvaluacionService evaluacionService;
 	
 
@@ -48,7 +48,7 @@ public class EvaluacionController {
 		evaluacionService.Guardar(evaluacion);
 	}
 	
-	
+	 */
 	/**
 	@PostMapping("/save/articulo/{idArticulo}/evaluador/{idEvaluador}")
 	public void saveEvaluacion(@PathVariable int idEvaluador , @PathVariable int idArticulo,@RequestBody Evaluacion evaluacion) {
@@ -56,7 +56,7 @@ public class EvaluacionController {
 	}
 	*/
 	
-	 @PostMapping("/asignar/{idEvaluador}/evaluacion/{idArticulo}")
+	 /* @PostMapping("/asignar/{idEvaluador}/evaluacion/{idArticulo}")
 	    public ResponseEntity<String> saveEvaluacion(
 	            @PathVariable int idEvaluador,
 	            @PathVariable int idArticulo,
@@ -93,7 +93,7 @@ public class EvaluacionController {
 	public List<Evaluacion> getEvaluacionesByConferencia(@PathVariable int idConferencia){
 		return evaluacionService.getEvaluacionesConferencia(idConferencia);
 	}
-	
+	 */
 	
 	
 	

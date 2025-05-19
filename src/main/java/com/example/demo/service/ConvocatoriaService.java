@@ -13,7 +13,7 @@ import com.example.demo.repository.ConvocatoriaRepository;
 
 @Service
 public class ConvocatoriaService {
-	
+	/* 
 	@Autowired
 	ConvocatoriaRepository convocatoriaRepository;
 	
@@ -59,5 +59,5 @@ public class ConvocatoriaService {
 	    return convocatoriaRepository.save(convocatoriaExistente);
 	}
 
-
+ */
 }
