@@ -86,5 +86,5 @@ public class Conferencia implements Serializable {
 	@OneToOne
     @JoinColumn(name = "id_cuenta_bancaria")
     private CuentaBancaria cuentaBancaria;
-
+	
 }
