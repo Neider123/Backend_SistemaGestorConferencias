@@ -29,7 +29,7 @@ import com.example.demo.AWS.AWSS3Service;
 @Service
 public class AWSS3ServiceImpl implements AWSS3Service {
 	
-	private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(AWSS3ServiceImpl.class);
+	/* private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(AWSS3ServiceImpl.class);
 	
 	//instanciar el bean
 	@Autowired
@@ -88,7 +88,7 @@ public class AWSS3ServiceImpl implements AWSS3Service {
 	 }
 
 
-  
+   */
 	
 	
 	/**
@@ -116,7 +116,7 @@ public class AWSS3ServiceImpl implements AWSS3Service {
 	
 
 	 //metodo para obtener las urls
-	@Override
+	/* @Override
 	public List<String> getObjectFromS3() {
 	    ListObjectsV2Result result = amazonS3.listObjectsV2(bucketName);
 	    List<S3ObjectSummary> objects = result.getObjectSummaries();
@@ -132,7 +132,7 @@ public class AWSS3ServiceImpl implements AWSS3Service {
 	    
 	    return urls;
 	}
-
+ */
     /**
 	@Override
 	public List<String> getObjectFromS3() {
@@ -149,7 +149,7 @@ public class AWSS3ServiceImpl implements AWSS3Service {
 	}
 	*/
 
-
+/* 
 	@Override
 	public InputStream downloadFile(String key) {
 		S3Object object = amazonS3.getObject(bucketName,key);
@@ -189,7 +189,7 @@ public class AWSS3ServiceImpl implements AWSS3Service {
 	     }
 	 }
 
-	
+	 */
 	
 
 }

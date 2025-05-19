@@ -20,8 +20,8 @@ public class ConferenciaService {
 	@Autowired
 	ConferenciaRepository conferenciaRepository;
 	
-	@Autowired
-	AWSS3ServiceImpl awss3ServiceImpl;
+/* 	@Autowired
+	AWSS3ServiceImpl awss3ServiceImpl; */
 	
 	@Autowired
 	UsuarioRepository usuarioRepository;
@@ -113,7 +113,7 @@ public class ConferenciaService {
 			conferenciaRepository.deleteById(id);
 		}
 		
-		//editar Conferencias
+		/* //editar Conferencias
 		public void editarConferencia(Conferencia conferencia,Integer idConferencia,MultipartFile archivoImagen,int idChair) {
 			Conferencia conferenciaAct = conferenciaRepository.findById(idConferencia)
 			        .orElseThrow(() -> new RuntimeException("Conferencia no encontrada"));
@@ -139,14 +139,14 @@ public class ConferenciaService {
 
 		    // Guardar la conferencia actualizada
 		    conferenciaRepository.save(conferenciaAct);
-		}
+		} */
 		
 		public List<Conferencia> obtenerConferencisTerminadas(LocalDate fecha){
 			return conferenciaRepository.findByFechaFinAfterAndActivoTrue(fecha);
 		}
 		
 		
-		@Transactional
+	/* 	@Transactional
 	    public void desactivarConferenciasConFechaFinAntesDe(LocalDate fecha) {
 	        List<Conferencia> conferencias = conferenciaRepository.findByFechaFinAfterAndActivoTrue(fecha);
 	        System.out.println(conferencias);
@@ -154,7 +154,7 @@ public class ConferenciaService {
 	            conferencia.setEstado("Finalizada"); // O el campo que uses para el estado
 	            conferenciaRepository.save(conferencia);
 	        }
-		}
+		} */
 		
 		
 

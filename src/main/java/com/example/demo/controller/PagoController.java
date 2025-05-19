@@ -18,7 +18,7 @@ import com.example.demo.service.PagoService;
 @RestController
 @RequestMapping("/pagos")
 public class PagoController {
-	
+	/* 
 	@Autowired
 	PagoService pagoService;
 	
@@ -54,7 +54,7 @@ public class PagoController {
 	    String folder = "pagos";
 	    return awss3ServiceImpl.uploadFileCarpeta(file, folder);
 	}
-
+ */
 
 
 }

@@ -13,7 +13,7 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 @Configuration
 public class AwsConfig {
 
-	@Value("${aws.access_key_id}")
+/* 	@Value("${aws.access_key_id}")
 	private String accessKeyId;
 
 	@Value("${aws.secret_access_key}")
@@ -29,5 +29,5 @@ public class AwsConfig {
 		return AmazonS3ClientBuilder.standard().withRegion(Regions.fromName(region))
 				.withCredentials(new AWSStaticCredentialsProvider(credentials)).build();
 	}
-
+ */
 }

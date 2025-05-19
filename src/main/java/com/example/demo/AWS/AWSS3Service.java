@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface AWSS3Service {
 	
-	
+	/* 
 	//Cargar los archivos al bucket S3
 	String uploadFile(MultipartFile file);
 	
@@ -15,7 +15,7 @@ public interface AWSS3Service {
 	List<String> getObjectFromS3();
 	
 	//descargar archivos del bucket
-	InputStream downloadFile(String key);
+	InputStream downloadFile(String key); */
 
 	/**
 	@Override
@@ -33,9 +33,9 @@ public interface AWSS3Service {
 	}
 	*/
 	//obtener URL del ultimo archivo g
-	String getLastUploadedFileUrl();
+	/* String getLastUploadedFileUrl();
 
 	void deleteObjectFromS3(String objectKey);
 
-	String uploadFileCarpeta(MultipartFile file, String folder);
+	String uploadFileCarpeta(MultipartFile file, String folder); */
 }

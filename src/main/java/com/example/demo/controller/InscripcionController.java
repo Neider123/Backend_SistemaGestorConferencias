@@ -22,7 +22,7 @@ import com.example.demo.service.InscripcionService;
 @RequestMapping("inscripciones")
 public class InscripcionController {
 	
-	@Autowired
+	/* @Autowired
 	InscripcionService inscripcionService;
 	
 	@GetMapping
@@ -53,7 +53,7 @@ public class InscripcionController {
 	@PutMapping("/activar/{idInscripcion}/new/{estado}")
 	public Inscripcion Inscripcion(@PathVariable int idInscripcion,@PathVariable String estado) {
 		return inscripcionService.cambiarEstadoInscripcion(idInscripcion, estado);
-	}
+	} */
 	
 	
 	

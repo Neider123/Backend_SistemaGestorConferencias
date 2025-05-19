@@ -32,7 +32,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @RequestMapping("/conferencias")
 public class ConferenciaController {
 	
-	@Autowired
+	/* @Autowired
 	ConferenciaService conferenciaService;
 	
 	@Autowired
@@ -68,7 +68,7 @@ public class ConferenciaController {
 		conferencia.setImagenUrl(fileUrl);
 		conferenciaService.Guardar(conferencia,idChair);
 	}
-	
+	 */
 	 /**
 	 @PostMapping("/save")
 	    public ResponseEntity<String> guardarConferencia(@RequestPart("file") MultipartFile file, @RequestPart("conferencia") String conferenciaJson) {
@@ -95,7 +95,7 @@ public class ConferenciaController {
 	
 	
 	//inactivar una conferencia
-	@PostMapping("desactivar/conferencia/{id}")
+	/* @PostMapping("desactivar/conferencia/{id}")
 	public ResponseEntity<?> desactivar(@PathVariable int id){
 		try {
 			conferenciaService.inactivarConferencia(id);
@@ -144,7 +144,7 @@ public class ConferenciaController {
 		
 		return topicos;
 		
-	}
+	} */
 	
 	
 	
@@ -181,7 +181,7 @@ public class ConferenciaController {
 
 	*/
 	
-	//Asigna el chair a una conferencia
+	/* //Asigna el chair a una conferencia
 	@PostMapping("/asignarChair/{id}")
 	public void asignarChair(@PathVariable int id,@RequestBody Conferencia conferencia) {
 		conferenciaService.AsignarChair(id, conferencia);
@@ -198,6 +198,6 @@ public class ConferenciaController {
 	    public ResponseEntity<String> desactivarConferenciasPasadas() {
 	        conferenciaService.desactivarConferenciasConFechaFinAntesDe(LocalDate.now());
 	        return ResponseEntity.ok("Conferencias pasadas desactivadas exitosamente.");
-	  }
+	  } */
 	
 }

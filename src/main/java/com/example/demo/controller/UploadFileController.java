@@ -23,7 +23,7 @@ import com.example.demo.AWS.AWSS3Service;
 public class UploadFileController {
 	
 	
-	@Autowired
+	/* @Autowired
 	private AWSS3Service awss3Service;
 	
 	
@@ -41,7 +41,7 @@ public class UploadFileController {
 	}
 	*/
 	
-	@GetMapping("/list")
+	/* @GetMapping("/list")
 	public ResponseEntity<List<String>> listFiles() {
 	    List<String> urls = awss3Service.getObjectFromS3();
 	    return new ResponseEntity<>(urls, HttpStatus.OK);
@@ -52,11 +52,13 @@ public class UploadFileController {
 	public ResponseEntity<Resource> download(@RequestParam("key") String key){
 		InputStreamResource resource  = new InputStreamResource(awss3Service.downloadFile(key));
 		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\""+key+"\"").body(resource);
-	}
+	} */
 	
 	
 	
-	
+	 
 }
+
+
 
 
